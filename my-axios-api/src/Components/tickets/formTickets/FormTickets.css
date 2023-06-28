@@ -1,0 +1,77 @@
+@import '../../../aliases/theme/styles.css';
+
+.form-tickets {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.form-tickets-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-tickets-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+}
+
+.tickets-form-sector {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.tickets-section-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    display: contents;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+input, textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+h3 {
+    margin-top: 2rem;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.tickets-section-header button {
+    margin-left: 30px;
+    height: 40px;
+}
+
+.form-tickets .tickets-button-submit {
+    width: 300px;
+}
+
+.labelCheck{
+    display: flex;
+    align-items: center;
+}
+
+.labelCheck input{
+    margin-top: 17px;
+}

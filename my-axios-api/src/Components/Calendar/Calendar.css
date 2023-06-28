@@ -1,0 +1,113 @@
+@import "../../aliases/theme/styles.css";
+
+.calendar-container {
+    background-color: var(--primary-background-color);
+}
+
+.calendar {
+    margin: 20px auto;
+    max-width: 80%;
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color)
+}
+
+.calendar-header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color)
+}
+
+.calendar table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.calendar th,
+.calendar td {
+    text-align: center;
+    padding: 10px;
+    border: 3px solid #ccc;
+}
+
+.calendar th {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    font-weight: bold;
+}
+
+.calendar td.empty {
+    border: none;
+}
+
+.calendar td.day {
+    position: relative;
+    height: 110px;
+    width: 90px;
+    max-width: 90px;
+}
+
+.calendar td.day:hover {
+    background-color: var(--primary-background-contrast-color);
+
+}
+
+.calendar td.day span {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.card-container a {
+    margin: 10px 0px 0 0;
+}
+
+.card-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--secondary-text-color);
+    width: 100%;
+    max-height: 70px;
+    overflow: hidden;
+}
+
+.card h4 {
+    margin: 5px;
+    max-height: 70px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.card:hover .card-content {
+    max-height: none;
+}
+
+.card:hover~.day span {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: (--primary-background-color);
+}

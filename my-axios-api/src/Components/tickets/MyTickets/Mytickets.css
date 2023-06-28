@@ -1,0 +1,53 @@
+@import "../../../aliases/theme/styles.css";
+
+.my-tickets-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-tickets-card {
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--primary-background-contrast-color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.my-tickets-card:hover {
+    transform: translateY(-5px);
+}
+
+.my-tickets-title {
+    color: var(--primary-text-color);
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.my-tickets-date {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.my-tickets-link {
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-button-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.my-tickets-link:hover {
+    color: var(--secondary-text-color);
+    background-color: var(--primary-button-contrast-color);
+}

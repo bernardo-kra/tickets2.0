@@ -1,0 +1,12 @@
+:root {
+    --primary-background-color: #353740;
+    --primary-background-contrast-color: #444855;
+    --primary-text-color: #fff;
+    --secondary-text-color: #333333;
+    --primary-button-color: #00ADB5;
+    --primary-button-contrast-color: #00CED1;
+}
+
+.not-selectable {
+    user-select: none;
+}
